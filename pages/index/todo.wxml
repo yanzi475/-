@@ -1,0 +1,61 @@
+<view class="pack-desc detail-text">
+  <view class="suppliers-desc detail-text">
+        <view class="suppliers-desc-list">
+              <text class="title">行程：</text>
+              <input class="new-todo" value="{{ input }}" placeholder="请输入行程" auto-focus bindinput="inputChangeHandle" bindconfirm="addTodoHandle"/>
+        </view>
+        <view class="suppliers-desc-list">
+                       <text class="title">时间：</text>
+                       <input class="content blue " value="{{ time }}" placeholder="请输入时间" />
+        </view>
+
+        <view class="suppliers-desc-list">
+                        <text class="title">负载：</text>
+                        <input class="new-todo" value="{{ fuzai }}" placeholder="请输入负载" />
+
+         </view>
+         <view class="suppliers-desc-list">
+                <text class="title">动子重量：</text>
+                <input class="new-todo" value="{{ weight }}" placeholder="请输入动子重量" />
+         </view>
+         <view class="suppliers-desc-list">
+                         <text class="title">停顿时间：</text>
+                         <input class="new-todo" value="{{ parseTime }}" placeholder="请输入停顿时间" />
+          </view>
+          <view class="suppliers-desc-list">
+                    <text class="title">保持力：</text>
+                    <input class="new-todo" value="{{ saveForce }}" placeholder="请输入保持力" />
+          </view>
+        <view class="suppliers-desc-list">
+                          <text class="title"> 摩擦力：</text>
+                          <input class="new-todo" value="{{ force }}" placeholder="请输入摩擦力" />
+         </view>
+        <view class="suppliers-desc-list">
+          <text class="title">加速度 ：</text>
+          <text class='content'>{{data.acceleration}}</text>
+        </view>
+
+        <view class="suppliers-desc-list">
+          <text class="title">速度：</text>
+          <text class='content blue' >{{data.speed}}</text>
+        </view>
+        <view class="suppliers-desc-list">
+          <text class="title">加速推力：</text>
+          <text class='content'>{{data.speedForce}}</text>
+        </view>
+        <view class="suppliers-desc-list mt56">
+          <text class="title"> 峰值推力：</text>
+          <text class='content'>{{data.topForce}}</text>
+        </view>
+
+        <view class="suppliers-desc-list">
+          <text class="title">持续推力：</text>
+          <text class='content'>{{data.durForce}}</text>
+        </view>
+        <view class="suppliers-desc-list mt56">
+          <text class="title">安全系数：</text>
+          <text class='content'>{{data.saveLevel}}</text>
+        </view>
+
+   </view>
+</view>
